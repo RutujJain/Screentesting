@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+i {
+    font-size: 10px;
+}
+
+header {
+    height: 40vh;
+    width: 100%;
+    background-color: #0066b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header-container1 {
+    height: 30vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+.header-container1 h1 {
+    font-size: 2.1vw;
+}
+
+.header-container1 h3 {
+    font-size: 1.3vw;
+    font-weight: 500;
+    margin-top: 1vw;
+
+}
+
+.header-container1 h4 {
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.header-container1 h4 span {
+    font-weight: 800;
+}
+
+#college-logo {
+    position: absolute;
+    left: 10vw;
+    top: 1.6vw;
+    height: 10vw;
+    width: 8vw;
+}
+
+#text-orange {
+    color: #f6a70d;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+.header-container1-subcontainer1 {
+    height: 10vw;
+    width: 25vw;
+}
+
+.plusicon {
+    display: none;
+}
+
+/*************************  DropDown ************************/
+.subnav {
+    height: 15vh;
+    width: 100%;
+}
+
+.navbar-links {
+    list-style: none;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-links li {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: inline-block;
+    position: relative;
+    font-size: 0.8vw;
+    padding: 8px 14px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar-links li:hover {
+    background-color: skyblue;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 0.8vw;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 2px;
+}
+
+.navbar-links li ul li a {
+    font-size: 10px;
+}
+
+.navbar-links li ul.DropDown li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8vw;
+}
+
+.navbar-links li ul.DropDown {
+    width: 200px;
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    left: 0px;
+    top: 28px;
+}
+
+.navbar-links li a {
+    width: 100%;
+}
+
+
+.navbar-links li ul li {
+    background-color: #e1dbe6;
+    height: 40px;
+    cursor: pointer;
+    border-bottom: 0.04px solid gray;
+    padding: 8px 12px;
+    border-left: 3px solid #e1dbe6;
+}
+
+.navbar-links li ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links li ul li:hover {
+    background-color: #D4CED8;
+    border-left: 3px solid gray;
+}
+
+.navbar-links li:hover ul.DropDown {
+    display: block;
+}
+
+.submenu {
+    display: inline-block;
+}
+
+.DropDown li a {
+    font-size: 10px;
+}
+
+/********************* SubDropDown **********************************/
+.SubDropDown {
+    display: none;
+}
+
+.DropDown li .SubDropDown li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8vw;
+}
+
+.DropDown li .SubDropDown li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.DropDown li .SubDropDown {
+    width: 200px;
+    top: 0px;
+    left: 100%;
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.DropDown ul li a {
+    width: 100%;
+}
+
+
+.DropDown li ul li {
+    background-color: #e1dbe6;
+    height: 40px;
+    cursor: pointer;
+    border-bottom: 0.04px solid gray;
+    padding: 6px 10px;
+    border-left: 3px solid #e1dbe6;
+}
+
+.DropDown li ul li:hover {
+    background-color: #D4CED8;
+    border-left: 3px solid gray;
+}
+
+
+.DropDown li:hover ul.SubDropDown {
+    display: block;
+}
+
+/******************************************** subDropDown-box ***********************************************/
+
+
+.SubDropDown-box {
+    display: none;
+}
+
+.SubDropDown li .SubDropDown-box li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8vw;
+}
+
+.SubDropDown li .SubDropDown-box li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SubDropDown li .SubDropDown-box {
+    width: 200px;
+    top: 0px;
+    left: 100%;
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.SubDropDown ul li a {
+    width: 100%;
+}
+
+
+.SubDropDown li ul li {
+    background-color: #e1dbe6;
+    height: 40px;
+    cursor: pointer;
+    border-bottom: 0.04px solid gray;
+    padding: 6px 10px;
+    border-left: 3px solid #e1dbe6;
+}
+
+.SubDropDown li ul li:hover {
+    background-color: #D4CED8;
+    border-left: 3px solid gray;
+}
+
+
+.SubDropDown li:hover ul.SubDropDown-box {
+    display: block;
+}
+
+@media screen and (max-width:860px) {
+    header {
+        height: 30vw;
+        background-color: #0066b2;
+    }
+
+    .header-container1 {
+        height: 24vw;
+        background-color: #0066b2;
+    }
+
+    .header-container1 h1 {
+        font-size: 2.6vw;
+
+    }
+
+    .header-container1 h3 {
+        margin-top: 3vw;
+        font-size: 2.1vw;
+    }
+
+    .header-container1 h4 {
+        font-size: 1.6vw;
+    }
+
+    @media (min-width:200px) and (max-width:450px) {
+        .header-container1 h1 {
+            font-size: 2.6vw;
+
+        }
+
+        .header-container1 h3 {
+            margin-top: 3vw;
+            font-size: 2.1vw;
+        }
+
+        .header-container1 h4 {
+            font-size: 1.6vw;
+        }
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #014075;
+        width: 100%;
+    }
+
+    #college-logo {
+        position: absolute;
+        left: 6vw;
+        top: 5vw;
+        height: 12vw;
+        width: 10vw;
+    }
+
+    .navbar-links li {
+
+        width: 100%;
+        border-bottom: 0.06px solid silver;
+        height: 9vh;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: space-between;
+    }
+
+    .navbar-links li a {
+        font-size: 12px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .navbar-links li:hover ul.DropDown {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-links li ul li {
+        margin-top: 4px;
+        color: darkblue;
+        font-size: 12px;
+    }
+
+    .navbar-links li ul li a {
+        font-size: 12px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: flex;
+        background-color: #0066b2;
+        height: 6vh;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 20px;
+        margin-top: 20px;
+        border-top: 0.06px solid white;
+    }
+
+    .plusicon {
+        display: block;
+    }
+
+    .navbar-links li ul.DropDown.active {
+        width: 100%;
+    }
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 20;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+footer {
+    height: 70vh;
+    width: 100%;
+}
+
+.footer-section1 {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-section1-box {
+    height: 100%;
+    width: 30%;
+}
+
+.footer-section1-box h3 {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #1D739B;
+    margin-bottom: 10px;
+}
+
+.footer-section1-box-links {
+    height: 80%;
+    width: 100%;
+    border-top: 3px solid #1D739B;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-section1-box-links h4 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1D739B;
+}
+
+.footer-section1-box-links h4 a {
+    color: #1D739B;
+    text-decoration: none;
+}
+
+.footer-section1-box-links ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.footer-section1-box-links ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #1D739B;
+}
+
+.footer-section2 {
+    height: 18%;
+    width: 100%;
+    background-color: #1A5383;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container1 {
+    color: white;
+    padding-left: 20px;
+}
+
+.upsildericon {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upslider-sub {
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upsildericon a i {
+    color: white;
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width:860px) {
+    .footer-section1-box h3 {
+        font-size: 21px;
+    }
+
+    .footer-section1 {
+        flex-direction: column;
+        height: 160vh;
+    }
+
+    .footer-section1-box {
+        width: 90%;
+    }
+
+    .footer-section1-box-links {
+        width: 90%;
+    }
+
+    .footer-section2 {
+        height: 24vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-container1 {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+}

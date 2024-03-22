@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.carousel {
+    height: 80vh;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.VIDYARAYAN {
+    height: 200vh;
+    width: 100%;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.VIDYARAYAN h1 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.VIDYARAYAN-BOOK {
+    height: 180vh;
+    width: 90%;
+    border: 1px solid gray;
+    background-color: #F3F3F3;
+    margin-top: 20px;
+}
+
+.maincontainer-subcontainer1 {
+    height: 200vh;
+    width: 100%;
+    border: 1px solid gray;
+}
